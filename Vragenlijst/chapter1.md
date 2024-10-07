@@ -1,5 +1,5 @@
 # Why is there no unanimous definition for artificial intelligence?
-    > There is no single, simple definition to what intelligence is, and therefore there is no single, simple definition to what artificial intelligence is. The definition of intelligence is subjective and varies from person to person, from context to context. The definition of artificial intelligence is therefore also subjective.
+ There is no single, simple definition to what intelligence is, and therefore there is no single, simple definition to what artificial intelligence is. The definition of intelligence is subjective and varies from person to person, from context to context. The definition of artificial intelligence is therefore also subjective.
 
 # What is the difference between quantitative data and qualitative data? Give some concrete examples of both types of data.
     Quantitative data is data that can be measured and expressed numerically. Examples of quantitative data are the number of people in a room, the temperature of a room, the weight of a person, etc. 
