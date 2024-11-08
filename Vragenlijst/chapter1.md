@@ -1,4 +1,4 @@
-# Intuition of artificial intelligenc
+# Intuition of artificial intelligence
 
 ## Why is there no unanimous definition for artificial intelligence?
  There is no single, simple definition to what intelligence is, and therefore there is no single, simple definition to what artificial intelligence is.  
