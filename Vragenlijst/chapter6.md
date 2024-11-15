@@ -39,7 +39,7 @@
 
 ## Ant colony optimization algorithm - selection of the destination
 
-- _Given_: a figure showing the distances between different objects and the intensity of the pheromones on each of the paths.
+- _Given_: a figure showing the distances between different objects and the intensity of the pheromones on each of the paths. <br>
 ![Example](image-18.png)
 - _Question_: discuss how the destination with the highest probability is determined. Use the mathematical formula for selecting the destination and choose your own value for alpha and beta. <br>
     To determine the destination with the highest probability, we calculate the probability of selecting each path based on the pheromone intensity and distance heuristics. Let's assume $\alpha = 2.0$ and $\beta = 3.0$ for this example.
