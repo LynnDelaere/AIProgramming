@@ -25,13 +25,15 @@ Give some examples of crossover and mutation.
     * Flip-bit mutation: All genes in a chromosome are inverted to the opposite value.
 
 ## Genetic Algorithm parameters
-* Name 5 parameters to configure a genetic algorithm.
-* How does each parameter affect the generation of solutions?
-    * Population size: Larger populations allow more diversity but increase computation.
-    * Crossover rate: Determines the frequency of combining genes, influencing genetic mix.
-    * Mutation rate: Higher rates introduce diversity but may disrupt good solutions.
-    * Selection method: Affects which solutions are chosen as parents (e.g., roulette wheel, tournament).
-    * Termination condition: Defines when the algorithm should end, affecting convergence time​.
+Name 5 parameters to configure a genetic algorithm.
+How does each parameter affect the generation of solutions?
+
+* Chromosome encoding: The chromosome encoding method requires thought to ensure that it is applicable to the problem and that the potential solutions strive for global maxima. The encoding scheme is at the heart of the success of the algorithm.
+* Population initialization: Although the individuals in a population are initialized randomly, ensuring that the solutions are valid is important for optimizing the computation of the genetic algorithm and initializing individuals with the right constraints.
+* Number of offspring: The number of offspring created in each generation can be configured. Given that after reproduction, part of the population is killed off to ensure that the population size is fixed, more offspring means more diversity, but there is a risk that good solutions will be killed off to accommodate those offspring.
+* Parent selection method: The selection method used to choose parents can be configured. The selection method must be based on the problem and the desired explorability versus exploitability.
+* Stopping condition: The stopping condition for the algorithm must make sense based on the problem and desired outcome. Computational complexity and time are the main concerns for the stopping condition.
+
 
 
 ## Fitness function
