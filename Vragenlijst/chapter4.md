@@ -3,12 +3,11 @@
 ## Genetic Algorithms: life cycle
 * Briefly explain the life cycle of a genetic algorithm. <br>
 The life cycle of a genetic algorithm consists of the following steps:
-    * Initialization: Create a population of random solutions.
-    * Evaluation: Evaluate the fitness of each solution in the population.
-    * Selection: Select the best solutions for the next generation.
-    * Crossover: Create new solutions by combining the genes of two parents.
-    * Mutation: Introduce random changes in the genes of the new solutions.
-    * Termination: Stop the algorithm when a stopping criterion is met.
+    * Creating a population: Creating a random population of potential solutions.
+    * Measuring the fitness of individuals in the population: Determining how good a specific solution is. This task is accomplished by using a fitness function that scores solutions to determine how good they are.
+    * Selecting parents based on their fitness: Selecting pairs of parents that will reproduce offspring.
+    * Reproducing individuals from parents: Creating offspring from their parents by mixing genetic information and applying slight mutations to the offspring.
+    * Populating the next generation: Selecting individuals and offspring from the population that will survive to the next generation.
 
 ## Enter diversity
 * Genetic algorithms use crossover and mutation as principles to ensure the diversity of the next generations.
