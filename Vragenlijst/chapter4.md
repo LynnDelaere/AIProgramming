@@ -35,11 +35,12 @@ How does each parameter affect the generation of solutions?
 * Stopping condition: The stopping condition for the algorithm must make sense based on the problem and desired outcome. Computational complexity and time are the main concerns for the stopping condition.
 
 
-
 ## Fitness function
-* What is a fitness function within a genetic algorithm? <br>
-A fitness function evaluates how well a solution meets the problem’s criteria, guiding the selection of the best solutions. The fitness function assigns a score to each solution based on its quality.
+What is a fitness function within a genetic algorithm? 
 
-* Why is the correct choice of the right fitness function crucial for the performance of the algorithm? <br>
-The choice of fitness function is crucial because it directly influences the algorithm's direction, focusing on desired outcomes and avoiding misleading solutions​ that may not be optimal.
+The fitness function determines the quality of an individual solution in the population. It measures how well a candidate solution achieves it's intended goal. The fitness function assigns a score to each possible solution. This score is used to determine which individuals are selected for reproduction and which individuals survive to the next generation. A fitness function is like a heuristic that guides the algorithm in finding the best solution.
+
+Why is the correct choice of the right fitness function crucial for the performance of the algorithm?
+
+The choice of fitness function is crucial because it directly influences the algorithm's direction. If the fitness function is not well designed, the algorithm may not converge to the optimal solution. A good fitness function should accurately reflect the desired characteristics of the optimal solution and be able to distinguish 'good' solutions from 'bad' ones.  A wrong fitness function can lead to a poorly performing algorithm that is unable to find useful solutions.
 
