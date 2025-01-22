@@ -2,16 +2,17 @@
 
 ## Swarm intelligence
 
-Explain what swarm intelligence is and on what principles is this form of intelligence based.
-  Swarm intelligence is a form of collective intelligence that is based on the collective behavior of decentralized, self-organized systems. The key principles behind SI are self-organization, decentralization, and indirect communication 
-  (often through pheromones or similar markers in biological analogs), enabling individuals to solve complex problems collectively by following simple rules without central control.
+### Explain what swarm intelligence is and on what principles is this form of intelligence based.
 
-Why is the analogy to ants selected in the ant optimization algorithm?
+  Swarm intelligence is a form of collective intelligence that is based on the collective behavior of decentralized, self-organized systems. The key principles behind SI are self-organization, decentralization, and indirect communication (often through pheromones or similar markers in biological analogs), enabling individuals to solve complex problems collectively by following simple rules without central control.
+
+### Why is the analogy to ants selected in the ant optimization algorithm?
+
   Ant colony optimization algorithms take inspiration from the foraging behavior of ants, which use pheromones to mark paths between their nest and food sources. This collective strategy helps ants converge to the shortest path, optimizing resource use. The ACO algorithm mimics this behavior by simulating virtual "pheromone" trails, guiding artificial agents toward optimal solutions through path reinforcement.
 
 ## Ant colony optimization algorithm
 
-Discuss the different steps in the ant colony optimization algorithm
+### Discuss the different steps in the ant colony optimization algorithm
 * **Initialize pheromone trails:** Set up all pheromone trails between nodes and initialize the intensity of the pheromones.
 * **Set up population of ants:** Create a population of ants in which each ant is placed at a random starting node.
 * **Choose the next destination:** Ants select the next destination based on pheromone intensity and distance heuristics until all nodes are visited.
@@ -19,28 +20,27 @@ Discuss the different steps in the ant colony optimization algorithm
 * **Update the best solution:** Update the best solution, given the total distance traveled by the ants.
 * **Stop criteria:** Determine when to stop the algorithm based on a predefined condition (e.g., number of iterations or convergence).
 
-Discuss the mathematical formula for destination selection based on pheromones and distance heuristics.
+### Discuss the mathematical formula for destination selection based on pheromones and distance heuristics.
+
 The probability of selecting a path is calculated using the formula:
   $$\frac{{\text{{(pheromones on path x)}}^a \cdot \left( \frac{1}{\text{{heuristic for path x}}} \right)^b}}{{\sum_{\text{{n of available destinations}}} \text{{(pheromones on path n)}}^a \cdot \left( \frac{1}{\text{{heuristic for path n}}} \right)^b}}$$
 where:
 * $a$ (aplha) represents the influence of pheromones on the selection.
 * $b$ (beta) represents the influence of distance heuristics on the selection.
 
-How is the best solution ultimately determined?
+### How is the best solution ultimately determined?
 The best solution is determined based on the total distance traveled by the ants in each iteration. The path with the shortest total distance is considered the best solution.
 
-What criteria can be used to stop the algorithm?
+### What criteria can be used to stop the algorithm?
 The stopping criteria for the ant colony optimization algorithm can differ based on the domain of the problem being solved, the following options are available: 
 * Stop when a predefined number of iterations is reached.
 * Stop when the best solution stagnates.
 
 ## Ant colony optimization algorithm - selection of the destination
 
-_Given_: a figure showing the distances between different objects and the intensity of the pheromones on each of the paths.
+### _Given_: a figure showing the distances between different objects and the intensity of the pheromones on each of the paths. <br> _Question_: discuss how the destination with the highest probability is determined. Use the mathematical formula for selecting the destination and choose your own value for alpha and beta.
 
 ![Example](image-18.png)
-
-_Question_: discuss how the destination with the highest probability is determined. Use the mathematical formula for selecting the destination and choose your own value for alpha and beta.
 
 To determine the destination with the highest probability, we calculate the probability of selecting each path based on the pheromone intensity and distance heuristics. Let's assume $\alpha = 2.0$ and $\beta = 3.0$ for this example.
   - For the path from Carousel to Swings: $${{(7)^2 \cdot \left( \frac{1}{9} \right)^3}} \approx 0.067$$
